@@ -1,17 +1,15 @@
 buildscript {
-    respositories {
+    repositories {
         mavenLocal()
     }
 
-    dependencies {}
+//    dependencies {}
 }
 
 archivesBaseName = 'canal'
 
-ext {
-
-}
+//ext {}
 
 dependencies {
-
+    compile group: 'com.alibaba.otter', name: 'canal.parse', version: '1.1.0'
 }

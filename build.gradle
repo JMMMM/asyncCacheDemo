@@ -5,13 +5,11 @@ subprojects {
     version = '0.1'
 
     sourceCompatibility = 1.8
-    targetCompattibility = 1.8
+    targetCompatibility = 1.8
 
     [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
 
-    ext {
-
-    }
+//    ext {}
 
     repositories {
         mavenCentral()
@@ -19,6 +17,6 @@ subprojects {
 
     dependencies {
         //通用依赖
-        compile()
+//        compile()
     }
 }
