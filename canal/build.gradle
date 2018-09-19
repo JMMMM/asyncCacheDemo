@@ -1,0 +1,17 @@
+buildscript {
+    respositories {
+        mavenLocal()
+    }
+
+    dependencies {}
+}
+
+archivesBaseName = 'canal'
+
+ext {
+
+}
+
+dependencies {
+
+}
