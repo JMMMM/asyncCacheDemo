@@ -62,13 +62,4 @@ public class CanalConnector {
         }
     }
 
-
-    public static void main(String[] args) {
-        CanalConnector connector = new CanalConnector();
-        connector.init();
-        connector.registerHandler((entries) -> {
-            entries.forEach(entry -> System.out.println(entry.getEntryType()));
-        });
-        connector.start();
-    }
 }

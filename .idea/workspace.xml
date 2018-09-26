@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="929b0191-bde9-46e4-ba76-af60ef22e379" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal/src/main/java/com/CacheServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal/src/main/java/com/kafka/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal/src/main/resources/producer.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canal/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/canal/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -88,8 +96,34 @@
       <file leaf-file-name="CanalConnector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="69" column="74" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="74" />
+            <state relative-caret-position="122">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/kafka/KafkaProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="20" column="1" selection-start-line="20" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#949#950#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CacheServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/CacheServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +134,12 @@
       <file leaf-file-name="KafkaHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,38 +148,58 @@
       <file leaf-file-name="CanalEntry.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.otter/canal.protocol/1.1.0/3484e515ce139e2c88f5a08490755699fdb4d823/canal.protocol-1.1.0-sources.jar!/com/alibaba/otter/canal/protocol/CanalEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="8403" column="27" selection-start-line="8403" selection-start-column="18" selection-end-line="8403" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinlogHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/BinlogHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="115">
+              <caret line="4112" column="28" selection-start-line="4112" selection-start-column="28" selection-end-line="4112" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#168701#168702#0" expanded="true" />
+                <element signature="e#168736#168737#0" expanded="true" />
+                <element signature="e#226664#226665#0" expanded="true" />
+                <element signature="e#226694#226695#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CanalConnector.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.otter/canal.client/1.1.0/87bc73f8b3ddf9ea88972691cc3a88912289120e/canal.client-1.1.0-sources.jar!/com/alibaba/otter/canal/client/CanalConnector.java">
+      <file leaf-file-name="ProtobufEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/handler/codec/protobuf/ProtobufEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1695">
-              <caret line="116" column="43" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="43" />
+            <state relative-caret-position="131">
+              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="canal-client.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canal/src/main/resources/canal-client.properties">
+      <file leaf-file-name="KafkaProducer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.1.1/baab01ca9249fa2d114d2f8f2fb40bcc8f0108de/kafka-clients-1.1.1-sources.jar!/org/apache/kafka/clients/producer/KafkaProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="140">
+              <caret line="613" column="16" selection-start-line="613" selection-start-column="16" selection-end-line="613" selection-end-column="16" />
+              <folding>
+                <element signature="e#39909#39910#0" expanded="true" />
+                <element signature="e#39950#39951#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Callback.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.1.1/baab01ca9249fa2d114d2f8f2fb40bcc8f0108de/kafka-clients-1.1.1-sources.jar!/org/apache/kafka/clients/producer/Callback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-133">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProducerRecord.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.1.1/baab01ca9249fa2d114d2f8f2fb40bcc8f0108de/kafka-clients-1.1.1-sources.jar!/org/apache/kafka/clients/producer/ProducerRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="129" column="11" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
+              <folding>
+                <element signature="e#6108#6109#0" expanded="true" />
+                <element signature="e#6165#6166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,6 +218,8 @@
       <find>targetCompattibility</find>
       <find>getInstan</find>
       <find>connect</find>
+      <find>byte</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +228,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="/usr/local/Cellar/gradle/4.10.1/libexec" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.1-all/455itskqi2qtf0v2sja68alqd/gradle-4.10.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -481,10 +539,10 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/init.gradle" value="510743077" />
-        <entry key="$PROJECT_DIR$" value="9184324511000" />
+        <entry key="$PROJECT_DIR$" value="9184403311000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1331871788" />
-        <entry key="$PROJECT_DIR$/canal/build.gradle" value="2077876264" />
+        <entry key="$PROJECT_DIR$/canal/build.gradle" value="2261111532" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2969899118" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1398496036" />
       </map>
@@ -693,12 +751,16 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalClient.java" />
-        <option value="$PROJECT_DIR$/canal/build.gradle" />
         <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalEntityBuilder.java" />
         <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalEntity.java" />
         <option value="$PROJECT_DIR$/canal/src/main/resources/canal-client.properties" />
-        <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java" />
         <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/BinlogHandler.java" />
+        <option value="$PROJECT_DIR$/canal/build.gradle" />
+        <option value="$PROJECT_DIR$/canal/src/main/resources/producer.properties" />
+        <option value="$PROJECT_DIR$/canal/src/main/java/com/kafka/KafkaProducer.java" />
+        <option value="$PROJECT_DIR$/canal/src/main/java/com/CacheServer.java" />
+        <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java" />
+        <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/RecordCarrier.java" />
         <option value="$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java" />
       </list>
     </option>
@@ -775,7 +837,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asyncCacheDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asyncCacheDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="canal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="canal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asyncCacheDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asyncCacheDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="canal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="asyncCacheDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -805,6 +887,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/canal/src/main/resources" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -817,7 +904,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CacheServer">
+    <configuration name="CacheServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.CacheServer" />
+      <module name="canal_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="CanalConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.canal.CanalConnector" />
       <module name="canal_main" />
@@ -928,8 +1026,13 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <list>
+      <item itemvalue="Application.CanalConnector" />
+      <item itemvalue="Application.CacheServer" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CacheServer" />
         <item itemvalue="Application.CanalConnector" />
       </list>
     </recent_temporary>
@@ -952,12 +1055,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537338277075</updated>
       <workItem from="1537338280198" duration="11730000" />
-      <workItem from="1537409440779" duration="2456000" />
+      <workItem from="1537409440779" duration="7975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14186000" />
+    <option name="totallyTimeSpent" value="19705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -971,6 +1074,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="bottom" id="Build" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -984,7 +1088,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.3297568" />
@@ -995,7 +1099,6 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -1045,19 +1148,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>rowData</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row.rowDatas_</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>entity</expression-string>
         <language-id>JAVA</language-id>
@@ -1097,13 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/CanalClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1122,13 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="1684" column="23" selection-start-line="1684" selection-start-column="23" selection-end-line="1684" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canal/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1187,29 +1283,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java">
+    <entry file="file://$PROJECT_DIR$/canal/src/main/resources/producer.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="69" column="74" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="74" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.1.1/baab01ca9249fa2d114d2f8f2fb40bcc8f0108de/kafka-clients-1.1.1-sources.jar!/org/apache/kafka/clients/producer/ProducerRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="129" column="11" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
+          <folding>
+            <element signature="e#6108#6109#0" expanded="true" />
+            <element signature="e#6165#6166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.1.1/baab01ca9249fa2d114d2f8f2fb40bcc8f0108de/kafka-clients-1.1.1-sources.jar!/org/apache/kafka/clients/producer/Callback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.1.1/baab01ca9249fa2d114d2f8f2fb40bcc8f0108de/kafka-clients-1.1.1-sources.jar!/org/apache/kafka/clients/producer/KafkaProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="613" column="16" selection-start-line="613" selection-start-column="16" selection-end-line="613" selection-end-column="16" />
+          <folding>
+            <element signature="e#39909#39910#0" expanded="true" />
+            <element signature="e#39950#39951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/CanalClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/handler/codec/protobuf/ProtobufEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.otter/canal.protocol/1.1.0/3484e515ce139e2c88f5a08490755699fdb4d823/canal.protocol-1.1.0-sources.jar!/com/alibaba/otter/canal/protocol/CanalEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="4112" column="28" selection-start-line="4112" selection-start-column="28" selection-end-line="4112" selection-end-column="28" />
+          <folding>
+            <element signature="e#168701#168702#0" expanded="true" />
+            <element signature="e#168736#168737#0" expanded="true" />
+            <element signature="e#226664#226665#0" expanded="true" />
+            <element signature="e#226694#226695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/RecordCarrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.otter/canal.protocol/1.1.0/3484e515ce139e2c88f5a08490755699fdb4d823/canal.protocol-1.1.0-sources.jar!/com/alibaba/otter/canal/protocol/CanalEntry.java">
+    <entry file="file://$PROJECT_DIR$/canal/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="8403" column="27" selection-start-line="8403" selection-start-column="18" selection-end-line="8403" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/CacheServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/kafka/KafkaProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="20" column="1" selection-start-line="20" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/CanalConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canal/src/main/java/com/canal/KafkaHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
           </folding>
         </state>
       </provider>
